@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-danger">
+    <main>
+        <div class="container">
+            <h1 class="text-white text-center mt-2 mb-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+            <div class="row text-center border rounded bg-white">
+
+                <div class="col-sm-8 col-md-6 col-lg-4">
+                    <h5>Nome e Cognome</h5>
+                    <input type="text" class="border border-danger rounded "> <span id="name"></span><!-- Contenuto inserito tramite JS -->
+                </div>
+
+                <div class="col-sm-8 col-md-6 col-lg-4">
+                    <h5>Km da percorrere</h5>
+                    <input type="text" class="border border-danger rounded "><span id="name"></span><!-- Contenuto inserito tramite JS -->
+                </div>
+
+                <div class="col-sm-8 col-md-6 col-lg-4">
+                    <h5>Fascia d'età</h5>
+                    <select name="" id="" class="border border-danger rounded ">
+                        <option value=""></option>
+                        <option value="">Minorenne</option>
+                        <option value="">Maggiorenne</option>
+                    </select> <span id="name"></span><!-- Contenuto inserito tramite JS -->
+                </div>
+
+                <div class="d-flex justify-content-center pt-5 pb-3">
+                <button id="genera" class="btn btn-primary fw-semibold me-3 text-center">Genera</button>
+                <button type="button" class="btn btn-primary fw-semibold text-center">Annulla</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center text-white pt-4">IL TUO BIGLIETTO</h2>
+
+        <div class="container bg-white">
+
+            <h4 class="pt-3">DETTAGLIO PASSEGGERI</h4>
+            
+            <div class="row border rounded bg-white">
+
+                <div class="col-md bg-secondary">
+                    <h5 class="pt-3">NOME DEL PASSEGGERO</h5>
+                    <p id="fullname"></p>
+                </div>
+
+                <div class="col-md">
+                    <h5 class="pt-3">Offerta</h5>
+                    <p id="offerta"></p>
+                </div>
+
+                <div class="col-md">
+                    <h5 class="pt-3">Carrozza</h5>
+                    <p id="carriage"></p>
+                </div>
+
+                <div class="col-md">
+                    <h5 class="pt-3">Codice CP</h5>
+                    <p id="cpcode"></p>
+                </div>
+
+                <div class="col-md">
+                    <h5 class="pt-3">Costo biglietto</h5>
+                    <p id="priceticket"></p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+
+ <script src="js/main.js"></script>   
+</body>
+</html>
